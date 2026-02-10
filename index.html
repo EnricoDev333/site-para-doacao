@@ -10,30 +10,56 @@
 
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="style.css">
+
+<script>
+function copiarPix() {
+  const pix = document.getElementById("pix-code").innerText;
+  const botao = document.getElementById("pix-btn");
+
+  navigator.clipboard.writeText(pix);
+
+  botao.innerText = "PIX copiado ✔";
+  botao.classList.add("copiado");
+
+  setTimeout(() => {
+    botao.innerText = "Copiar PIX";
+    botao.classList.remove("copiado");
+  }, 3000);
+}
+</script>
+
 </head>
 <body>
-    <h1>SITE PARA DOAÇAO PRO MURPHY</h1>
-    <div class="principal separacao">
-    <p>Olá, seja bem-vindo ao nosso site de doações para o Murphy! Aqui, você pode contribuir para ajudar o Murphy a receber os cuidados necessários. Sua doação fará uma grande diferença na vida dele. Obrigado por sua generosidade!</p>
-    </div>
-    <div class="doar separacao">
-    <h2>Como doar:</h2>
-    <ol>
-        <li>Acesse a página de doações clicando no botão abaixo.</li>
-        <li>Escolha o valor que deseja doar.</li>
-        <li>Preencha suas informações de pagamento.</li>
-        <li>Confirme sua doação e faça a diferença na vida do Murphy!</li>
-    </div>
-    <div class="doar pix">
-    <a href="https://link.mercadopago.com.br/doacaomurphy" class="botao-doar" target="_blank">Cartão de crédito</a>
-    </div>
-<a href="pix:erikogamer234@gmail.com">
-  <button class="btn-pix">
-    📲 Pagar Pix pelo app do banco
-  </button>
-</a>
+  <div class="container">
 
+  <div class="card">
+    <img src="gatinho.jpg" alt="Murphy">
+
+    <h1>Ajude o Murphy 🐾</h1>
+
+    <p>
+      Sua doação ajuda o Murphy com veterinário e cuidados essenciais.
+      Qualquer valor faz diferença 💖
+    </p>
+
+    <div class="doar">
+      <h2>Como doar:</h2>
+      <ol>
+        <li>Clique no botão de doação</li>
+        <li>Escolha o valor</li>
+        <li>Finalize o pagamento</li>
+      </ol>
+    </div>
+
+    <a href="https://link.mercadopago.com.br/doacaomurphy" class="btn btn-mp" target="_blank">
+      Doar com Cartão 💳
+    </a>
+
+    <div class="pix-box">
+      <span id="pix-code">petsmeusplf@gmail.com</span>
+      <button id="pix-btn" onclick="copiarPix()">Copiar PIX</button>
+    </div>
+  </div>
+</div>
     </body>
-
 </html>
-

@@ -1,53 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
 body {
-    background-color: #fff;
-    color: #333;
-    font-family: 'Lato', sans-serif;
-    padding: 20px;
-    min-width: 300px;
-    max-width: auto;
+  background: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+.container {
+  width: 100%;
+  padding: 20px;
 }
+
+.card {
+  max-width: 450px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin: auto;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
 h1 {
-    display: flex;
-    color: #333;
-    align-items: center;
-    justify-content: center;
-    max-width: 2fr;
-    margin: auto;
+  font-size: 26px;
+  margin-bottom: 15px;
 }
 
-.principal {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 2fr;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
+p {
+  color: #555;
+  margin-bottom: 20px;
 }
 
-img {
-    max-width: 300px;
-    min-width: 150px;
-    height: auto;
-    margin-top: 20px;
+.doar {
+  margin: 20px 0;
+  text-align: left;
 }
 
-.pix {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
+.doar h2 {
+  margin-bottom: 10px;
+}
+
+.doar ol {
+  padding-left: 20px;
+  color: #555;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin: 15px 0;
+  transition: 0.3s;
+}
+
+.btn-mp {
+  background: #009ee3;
+  color: white;
+}
+
+.btn-mp:hover {
+  background: #007bb5;
+}
+
+.pix-box {
+  background: #f1f3f5;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.pix-box span {
+  display: block;
+  font-size: 12px;
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+
+.pix-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #00c853;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pix-box button:hover {
+  background: #00a844;
+}
+
+.pix-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #00c853;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pix-box button.copiado {
+  background: #009ee3;
 }
